@@ -1,26 +1,28 @@
 <!--index.wxml-->
-<view class="container">
-  <swiper indicator-dots="true" autoplay="true">
-    <block wx:for="{{banners}}" wx:key="Img">
-      <swiper-item>
-        <image mode='widthFix' src="{{item.Img}}" style='height:146px;'/>
-      </swiper-item>
-      <swiper-item>
-        <image mode='widthFix' src='http://image.bitautoimg.com/appimage/cms/20171012/w750_h360_3f213aa4b131498191d7dfe868b3b204.jpg'></image>
-      </swiper-item>
-    </block>
-  </swiper>
-  <view class="userinfo" hidden='true'>
+<swiper indicator-dots="true" autoplay="true">
+  <block wx:for="{{banners}}" wx:key="Img">
+    <swiper-item class='swiperitems'>
+      <image src="{{item.Img}}" />
+    </swiper-item>
+    <swiper-item class='swiperitems'>
+      <image src='http://image.bitautoimg.com/appimage/cms/20171012/w750_h360_3f213aa4b131498191d7dfe868b3b204.jpg'></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='main'>
+  <!-- <view class="userinfo" hidden='true'>
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
-  </view>
-  <view wx:for="{{publicTestItems}}" wx:key="PublicTestId">
-    <text>  {{index+1}}:{{item.Title}}</text>
-    <image src='{{item.CoverImg}}' style='height:146px;'></image>
-  </view>
+  </view>  -->
+  <block wx:for="{{publicTestItems}}" wx:key="PublicTestId">
+    <view class='public-item' data-publictestid="{{item.PublicTestId}}" bindtap='redirectToDetailPage'>
+      <text>{{index+1}}:{{item.Title}}</text>
+      <image src='{{item.CoverImg}}'></image>
+    </view>
+  </block>
   <view>
     <button bindtap='loadMoreItems' wx:if="{{isShowMoreBtn}}" type="primary">加载更多</button>
   </view>

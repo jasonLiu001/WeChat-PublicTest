@@ -62,6 +62,19 @@ Page({
   },
   /**
    * 
+   * 跳转到详情页
+   */
+  redirectToDetailPage: function (event) {
+    var id = event.currentTarget.dataset["publictestid"];
+    wx.redirectTo({
+      url: '/pages/detail/detail?id=' + id,
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
+  /**
+   * 
    * 加载更多项目
    */
   loadMoreItems: function () {

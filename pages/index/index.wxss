@@ -1,4 +1,5 @@
 /**index.wxss**/
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -18,4 +19,31 @@
 
 .usermotto {
   margin-top: 200px;
+}
+
+/**滚动banner **/
+
+.swiperitems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiperitems image {
+  height: 146px;
+}
+
+/**各个项目**/
+
+.public-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.public-item image {
+  height: 146px;
 }
