@@ -5,8 +5,6 @@ Page({
    */
   data: {
     location: {
-      name: '',
-      address: '',
       latitude: 0.0,
       longitude: 0.0
     }
@@ -24,16 +22,17 @@ Page({
    * 
    * 获取用户位置
    */
-  getUserLocation: function (e) {
-    var self = this;
+  getUserLocation: function (ev) {
+    //获取位置
     wx.getLocation({
-      success: function (res) {
-
-        
-        self.setData({
-            
+      success: res => {
+        this.data.location.latitude = res.latitude;
+        this.data.location.longitude = res.longitude;
+        //更新UI
+        this.setData({
+          location: this.data.location
         });
-      },
-    });
+      }
+    })
   }
 })

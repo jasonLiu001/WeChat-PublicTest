@@ -1,3 +1,8 @@
 <view>
   <button type='default' bindtap='getUserLocation'>定位</button>
 </view>
+<view class='choose-location'>
+  <text>用户位置</text>
+  <text>纬度：{{location.latitude}}</text>
+  <text>经度：{{location.longitude}}</text>
+</view>
