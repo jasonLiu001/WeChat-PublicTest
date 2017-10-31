@@ -1,7 +1,7 @@
 {
 	"description": "项目配置文件。",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true
@@ -12,8 +12,30 @@
 	"projectname": "ArticleManagement",
 	"condition": {
 		"weapp": {
-			"current": -1,
-			"list": []
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "scroll-view",
+					"pathName": "pages/views/scroll-view/scroll-view",
+					"query": "id=2",
+					"scene": "1001"
+				},
+				{
+					"id": 1,
+					"name": "downloadFile",
+					"pathName": "pages/api/downloadFile/downloadFile",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "chooseImage",
+					"pathName": "pages/api/chooseImage/chooseImage",
+					"query": "",
+					"scene": "1001"
+				}
+			]
 		},
 		"search": {
 			"current": -1,

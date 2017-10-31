@@ -1,0 +1,3 @@
+<view>
+  <button type="default" bindtap='downLoadFiles'>下载文件</button>
+</view>

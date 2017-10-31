@@ -1,0 +1,6 @@
+<view>
+  <button type='default' bindtap='selectPicFile'>选择图片</button>  
+</view>
+<view>
+<image src='{{imgSrc}}'></image>
+</view>
