@@ -1,0 +1,3 @@
+<view>
+  <button type='default' bindtap='previewImageFile'>图片预览</button>
+</view>

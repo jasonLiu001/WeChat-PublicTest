@@ -1,0 +1,9 @@
+<view>
+  <button type='default' bindtap='getImageFileInfo'>获取图片信息</button>
+</view>
+<view class='imageinfo-box'>
+  <text>图片信息</text>
+  <text>宽度：{{width}}</text>
+  <text>高度：{{height}}</text>
+  <text>路径：{{path}}</text>
+</view>

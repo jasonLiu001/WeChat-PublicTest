@@ -12,7 +12,7 @@
 	"projectname": "ArticleManagement",
 	"condition": {
 		"weapp": {
-			"current": 2,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -32,6 +32,20 @@
 					"id": -1,
 					"name": "chooseImage",
 					"pathName": "pages/api/chooseImage/chooseImage",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "previewImage",
+					"pathName": "pages/api/previewImage/previewImage",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "getImageInfo",
+					"pathName": "pages/api/getImageInfo/getImageInfo",
 					"query": "",
 					"scene": "1001"
 				}
