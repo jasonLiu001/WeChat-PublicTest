@@ -1,0 +1,13 @@
+<view class="main">
+  <view class='main'>
+    <button bindtap='getUserAuthroize' type='default'>用户授权</button>
+  </view>
+  <view class='main'>
+    <button hidden='true' bindtap='multiLogin' type='default'>多次登录</button>
+  </view>
+  <view class='main'>
+    <text>用户授权信息：{{authorizeString}}</text>
+    <text>用户授权结果：{{authMsg}}</text>
+    <text>用户登录授权code:{{code}}</text>
+  </view>
+</view>

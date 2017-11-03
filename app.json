@@ -8,7 +8,9 @@
     "pages/api/chooseImage/chooseImage",
     "pages/api/previewImage/previewImage",
     "pages/api/getImageInfo/getImageInfo",
-    "pages/api/chooseLocation/chooseLocation"
+    "pages/api/chooseLocation/chooseLocation",
+    "pages/api/authorize/authorize",
+    "pages/api/request/request"
   ],
   "window": {
     "backgroundTextStyle": "light",

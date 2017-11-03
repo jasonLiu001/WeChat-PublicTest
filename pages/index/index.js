@@ -46,7 +46,7 @@ Page({
             hasUserInfo: true
           })
         }
-      })
+      });
     }
     //页面初始化
     self.getPublicTestItems(self.data.pageIndex);
