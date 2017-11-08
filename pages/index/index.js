@@ -66,7 +66,7 @@ Page({
    */
   redirectToDetailPage: function (event) {
     var id = event.currentTarget.dataset["publictestid"];
-    wx.redirectTo({
+    wx.navigateTo({
       url: '/pages/detail/detail?id=' + id,
       success: function (res) { },
       fail: function (res) { },

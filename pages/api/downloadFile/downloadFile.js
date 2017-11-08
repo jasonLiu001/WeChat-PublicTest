@@ -27,5 +27,15 @@ Page({
     wx.navigateTo({
       url: '/pages/api/chooseImage/chooseImage'
     });
+  },
+
+  /**
+   * 
+   * 返回上级页面
+   */
+  callBackPages: function (ev) {
+    wx.navigateBack({
+      url: ''
+    });
   }
 })

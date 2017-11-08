@@ -4,15 +4,24 @@
 		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
-		"minified": true
+		"minified": true,
+		"newFeature": true
 	},
-	"compileType": "weapp",
+	"compileType": "miniprogram",
 	"libVersion": "1.6.0",
 	"appid": "wx6c73d02dcee0a12d",
 	"projectname": "ArticleManagement",
 	"condition": {
-		"weapp": {
-			"current": 9,
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -85,14 +94,6 @@
 					"scene": "1001"
 				}
 			]
-		},
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
 		}
 	}
 }

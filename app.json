@@ -10,9 +10,34 @@
     "pages/api/getImageInfo/getImageInfo",
     "pages/api/chooseLocation/chooseLocation",
     "pages/api/authorize/authorize",
+    "pages/api/redirectTo/redirectTo",
     "pages/api/request/request",
-    "pages/nestpages/nestpages"
+    "pages/nestpages/nestpages"    
   ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/nestpages/nestpages",
+        "text": "NestPages"
+      },
+      {
+        "pagePath": "pages/api/getImageInfo/getImageInfo",
+        "text": "GetImageInfo"
+      },
+      {
+        "pagePath": "pages/api/redirectTo/redirectTo",
+        "text": "Redirect"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
