@@ -1,3 +1,6 @@
 <view>
   <button type="default" bindtap='downLoadFiles'>下载文件</button>
 </view>
+<view class="main">
+  <button type='default' bindtap='callNextPages'>调用下级页面</button>
+</view>

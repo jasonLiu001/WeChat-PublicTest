@@ -10,7 +10,8 @@
     "pages/api/getImageInfo/getImageInfo",
     "pages/api/chooseLocation/chooseLocation",
     "pages/api/authorize/authorize",
-    "pages/api/request/request"
+    "pages/api/request/request",
+    "pages/nestpages/nestpages"
   ],
   "window": {
     "backgroundTextStyle": "light",

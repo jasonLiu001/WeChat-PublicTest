@@ -1,4 +1,3 @@
-// pages/api/getImageInfo/getImageInfo.js
 Page({
 
   /**
@@ -15,6 +14,11 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  callNextPages: function (ev) {
+    wx.navigateTo({
+      url: '/pages/api/chooseLocation/chooseLocation'
+    });
   },
   getImageFileInfo: function (e) {
     var self = this;

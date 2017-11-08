@@ -11,3 +11,6 @@
     <text>用户登录授权code:{{code}}</text>
   </view>
 </view>
+<view class="main">
+  <button type='default' bindtap='callNextPages'>调用下级页面</button>
+</view>

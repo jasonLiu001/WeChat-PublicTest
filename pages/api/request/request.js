@@ -1,4 +1,3 @@
-// pages/api/request/request.js
 Page({
 
   /**
@@ -26,6 +25,11 @@ Page({
     this.buildRequest();
     this.buildRequest();
     this.buildRequest();
+  },
+  callNextPages: function (ev) {
+    wx.navigateTo({
+      url: '/pages/nestpages/nestpages'
+    });
   },
   /**
    *  发送请求

@@ -6,3 +6,6 @@
     <text>{{index}}:{{item}}</text>
   </block>
 </view>
+<view class="main">
+  <button type='default' bindtap='callNextPages'>回调嵌套页面首页</button>
+</view>

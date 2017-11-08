@@ -16,6 +16,11 @@ Page({
   onLoad: function (options) {
 
   },
+  callNextPages: function (ev) {
+    wx.navigateTo({
+      url: '/pages/api/authorize/authorize'
+    });
+  },
 
   /**
    * 

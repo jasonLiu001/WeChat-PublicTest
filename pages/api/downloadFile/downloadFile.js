@@ -21,5 +21,11 @@ Page({
         console.log(res);
       }
     });
+  },
+
+  callNextPages: function (ev) {
+    wx.navigateTo({
+      url: '/pages/api/chooseImage/chooseImage'
+    });
   }
 })

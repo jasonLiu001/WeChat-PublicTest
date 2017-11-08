@@ -6,3 +6,6 @@
   <text>纬度：{{location.latitude}}</text>
   <text>经度：{{location.longitude}}</text>
 </view>
+<view class="main">
+  <button type='default' bindtap='callNextPages'>调用下级页面</button>
+</view>

@@ -27,5 +27,10 @@ Page({
         });
       }
     });
+  },
+  callNextPages: function (ev) {
+    wx.navigateTo({
+      url: '/pages/api/previewImage/previewImage'
+    });
   }
 })

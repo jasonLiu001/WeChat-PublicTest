@@ -7,3 +7,6 @@
   <text>高度：{{height}}</text>
   <text>路径：{{path}}</text>
 </view>
+<view class="main">
+  <button type='default' bindtap='callNextPages'>调用下级页面</button>
+</view>

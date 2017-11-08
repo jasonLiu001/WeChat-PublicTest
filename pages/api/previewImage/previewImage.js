@@ -1,4 +1,3 @@
-// pages/api/previewImage/previewImage.js
 Page({
 
   /**
@@ -13,6 +12,11 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  callNextPages: function (ev) {
+    wx.navigateTo({
+      url: '/pages/api/getImageInfo/getImageInfo'
+    });
   },
   /**
    * 

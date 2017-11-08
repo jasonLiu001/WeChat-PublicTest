@@ -1,4 +1,4 @@
-// pages/api/authorize/authorize.js
+
 Page({
 
   /**
@@ -15,6 +15,11 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  callNextPages: function (ev) {
+    wx.navigateTo({
+      url: '/pages/api/request/request'
+    });
   },
   /**
    * 

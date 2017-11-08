@@ -12,7 +12,7 @@
 	"projectname": "ArticleManagement",
 	"condition": {
 		"weapp": {
-			"current": 8,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -74,6 +74,14 @@
 					"id": -1,
 					"name": "request",
 					"pathName": "pages/api/request/request",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "nestpages",
+					"pathName": "pages/nestpages/nestpages",
+					"query": "",
 					"scene": "1001"
 				}
 			]
