@@ -14,8 +14,26 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    //打开页面时提示授权
+    //this.getUserAuthroize();
+    //页面时就调用登录接口 获取登录凭证
+    wx.login({
+      success: res => {
+         console.log(res.code);
+      }
+    });
   },
+
+  /**
+   * 
+   * 获取用户手机号 回调函数
+   */
+  getPhoneNumber: function (e) {
+    console.log(e.detail.errMsg)
+    console.log(e.detail.iv)
+    console.log(e.detail.encryptedData)
+  },
+
   callNextPages: function (ev) {
     wx.navigateTo({
       url: '/pages/api/request/request'
@@ -54,11 +72,21 @@ Page({
           } else {
             wx.authorize({
               scope: 'scope.userInfo',
-              success: (errMsg) => {
-                console.log(errMsg);
+              success: (res) => {
+                console.log(res);
+              },
+              fail: err => {
+                this.setData({
+                  authorizeString: err.errMsg,
+                  authMsg: '用户已拒绝授权'
+                });
+                console.log(err);
               }
             });
           }
+        },
+        fail: res => {
+          console.log(res);
         }
       });
     } else {

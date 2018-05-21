@@ -14,3 +14,6 @@
 <view class="main">
   <button type='default' bindtap='callNextPages'>调用下级页面</button>
 </view>
+<view class='main'>
+<button type='default' open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">手机号授权</button>
+</view>

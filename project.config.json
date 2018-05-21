@@ -21,7 +21,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -90,6 +90,13 @@
 					"id": -1,
 					"name": "nestpages",
 					"pathName": "pages/nestpages/nestpages",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "home",
+					"pathName": "pages/userhome/home",
 					"query": "",
 					"scene": "1001"
 				}

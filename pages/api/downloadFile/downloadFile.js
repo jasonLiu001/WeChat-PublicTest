@@ -35,7 +35,7 @@ Page({
    */
   callBackPages: function (ev) {
     wx.navigateBack({
-      url: ''
+      delta: 1
     });
   }
 })
