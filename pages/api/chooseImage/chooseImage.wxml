@@ -1,9 +1,0 @@
-<view>
-  <button type='default' bindtap='selectPicFile'>选择图片</button>  
-</view>
-<view>
-<image src='{{imgSrc}}'></image>
-</view>
-<view class="main">
-  <button type='default' bindtap='callNextPages'>调用下级页面</button>
-</view>

@@ -1,7 +1,0 @@
-<view class='main'>
-  <button type='default' bindtap='openNewAndCloseSelf'>打开新页面关闭自己</button>
-</view>
-<view class='main'>
-  <text>通过wx.redirectTo打开新页面后，再通过返回键是无法返回到上级页面的</text>
-  <text>通过wx.navigateTo打开新页面（下级页面），再通过返回键是可以返回到上级页面的</text>
-</view>

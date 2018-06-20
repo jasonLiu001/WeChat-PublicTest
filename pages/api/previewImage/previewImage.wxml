@@ -1,6 +1,0 @@
-<view>
-  <button type='default' bindtap='previewImageFile'>图片预览</button>
-</view>
-<view class="main">
-  <button type='default' bindtap='callNextPages'>调用下级页面</button>
-</view>

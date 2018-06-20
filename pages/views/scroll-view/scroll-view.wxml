@@ -1,6 +1,0 @@
-<view>
-  <scroll-view class='scroll-view' bindscrolltoupper=""></scroll-view>
-</view>
-<view class="main">
-  <button type='default' bindtap='callNextPages'>调用下级页面</button>
-</view>

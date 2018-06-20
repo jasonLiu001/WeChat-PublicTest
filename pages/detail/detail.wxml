@@ -1,9 +1,0 @@
-<view class="detail-container">
-  <view class='header'>
-    <text>{{detail.Title}}</text>
-    <image src='{{detail.DetailCoverImg}}'></image>
-  </view>
-  <view class='detail-text'>
-    <rich-text nodes="{{detail.Content}}"></rich-text>
-  </view>
-</view>

@@ -1,6 +1,0 @@
-<view class='main'>
-  <text>登录后即可继续授权</text>
-  <button type='default' bindtap='authAndLogin'>授权微信后登录</button>
-  <button type='default' bindtap='useWeiXinLogin'>微信快捷登录</button>
-  <button type='default' bindtap='useMobileLogin'>手机号登录</button>
-</view>
