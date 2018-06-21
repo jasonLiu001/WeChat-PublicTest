@@ -1,22 +1,30 @@
-<view class='main'>
+<!--主容器-->
+<view style="display: flex;flex-direction: column;justify-content: space-between;align-items: center;box-sizing: border-box; padding-left: 24px;padding-right: 24px;">
+
   <!-- 循环单个列表项 -->
-  <view wx:for="{{[1,2,3]}}" wx:for-index="ix" wx:for-item="row" style='width: 100%;padding: 10px;border-radius: 10px;background-color: #fff;margin-top: 24px;'>
+  <view wx:for="{{list}}" wx:key="period" wx:for-index="ix" wx:for-item="row" style='position:relative; width: 100%;padding: 10px;border-radius: 10px;background-color: #fff;margin-top: 24px;'>
 
     <!-- 列表项中的第一行 -->
     <view style='display:flex;flex-direction:row;justify-content:space-between;'>
-      <text>20181203-001</text>
-      <text>2018-12-03 12:20:30</text>
+      <text>{{row.period}}</text>
+      <text>{{row.investTime}}</text>
     </view>
 
-    <!-- 列表项中的第二行 -->
-    <view style='display:flex;flex-direction:row;justify-content: space-between;'>
-      <text>字段名称：</text>
-      <text>0</text>
+    <!-- 列表项中的第二行  -->
+    <view wx:for="{{displayColumns}}" wx:key="id" wx:for-index="columnIndex" wx:for-item="columnItem" style='display:flex;flex-direction:row;justify-content: space-between;'>
+      <text>{{columnItem.des}}:</text>
+      <text>{{row[columnItem.name]}}</text>
     </view>
 
-    <!-- 需要固定在每个列表项上面的图标文件 -->
-    <view>
-      <image src='{{icons.icon_completed_right}}' style='height: 50px;width: 100px;'></image>
+
+    <!-- status图标 -->
+    <view style="position:absolute;left: 100px;top:30px;opacity:0.5;height: 50px;width: 100px;">
+      <text style="color: #f76160">已完成</text>
+    </view>
+
+    <!--isWin图标-->
+    <view style="position:absolute;left: 150px;top:10px;opacity:0.5;height: 50px;width: 100px;">
+      <image src='{{icons.icon_completed_right}}' style="display: inline"></image>
     </view>
 
   </view>

@@ -9,8 +9,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: fakeData.tableFields,
+    hasMoreData: true,
+    pageIndex: 1,
+    list: [],
+    displayColumns: [{ id: 1, name: 'currentAccountBalance', des: '账号余额' }],
     icons: fakeData.iconList
+  },
+
+  findInvestInfoList: function () {
+    wx.request({
+      url: fakeData.apiUrl.findInvestInfoList + "?pageIndex=" + this.data.pageIndex + "&pageSize=20&planType=1",
+      method: 'POST',
+      success: (data) => {
+        if (data) {
+          //解析 服务器端接口数据
+          let serverData = data.data;
+
+          //全部加载完成 隐藏正在载入...
+          if (!data || serverData.data === null || serverData.data === undefined) {
+            this.data.hasMoreData = false;
+            return;
+          }
+
+          //遍历数组数据
+          for (let key in serverData.data) {
+            this.data.list.push(serverData.data[key]);
+            this.setData({
+              list: this.data.list
+            });
+          }
+
+        }
+      },
+      fail: (data, code) => {
+        console.log(`handling fail, code = ${code}`)
+      }
+    });
   },
 
   /**
@@ -31,7 +65,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.findInvestInfoList();
   },
 
   /**
@@ -59,7 +93,8 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    this.data.pageIndex++;
+    this.findInvestInfoList();
   },
 
   /**

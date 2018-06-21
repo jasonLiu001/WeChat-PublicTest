@@ -1,5 +1,3 @@
-const tableFields = ['field1', 'field2', 'field3', 'field4', 'field5', 'field6', 'field7', 'field8'];
-
 // 图标列表
 const iconList = {
   checkbox_checked: 'https://cnlands.cn/images/icon_box-checked.png',
@@ -8,7 +6,17 @@ const iconList = {
   icon_completed_wrong: 'https://cnlands.cn/images/icon_error.png'
 };
 
+// 接口列表
+const apiUrl = {
+  findAwardInfoList: 'https://www.cnlands.cn/service/lottery/findAwardInfoList',
+  findInvestInfoList: 'https://www.cnlands.cn/service/lottery/findInvestInfoList',
+  findMaxProfitInfoList: 'https://www.cnlands.cn/service/lottery/findMaxProfitInfoList',
+  findPlanInfoList: 'https://www.cnlands.cn/service/lottery/findPlanInfoList',
+  findPlanResultInfoList: 'https://www.cnlands.cn/service/lottery/findPlanResultInfoList',
+  findInvestNumbersInfoList: 'https://www.cnlands.cn/service/lottery/findInvestNumbersInfoList'
+};
+
 module.exports = {
-  tableFields: tableFields,
+  apiUrl: apiUrl,
   iconList: iconList
 }
