@@ -19,4 +19,4 @@ const apiUrl = {
 module.exports = {
   apiUrl: apiUrl,
   iconList: iconList
-}
+};
