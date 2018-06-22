@@ -17,6 +17,9 @@ Page({
   },
 
   findInvestInfoList: function () {
+    wx.showLoading({
+      title: '正在加载...'
+    });
     wx.request({
       url: fakeData.apiUrl.findInvestInfoList + "?pageIndex=" + this.data.pageIndex + "&pageSize=20&planType=1",
       method: 'POST',
@@ -28,6 +31,7 @@ Page({
           //全部加载完成 隐藏正在载入...
           if (!data || serverData.data === null || serverData.data === undefined) {
             this.data.hasMoreData = false;
+            wx.hideLoading();
             return;
           }
 
@@ -38,10 +42,12 @@ Page({
               list: this.data.list
             });
           }
-
         }
+
+        wx.hideLoading();
       },
       fail: (data, code) => {
+        wx.hideLoading();
         console.log(`handling fail, code = ${code}`)
       }
     });
