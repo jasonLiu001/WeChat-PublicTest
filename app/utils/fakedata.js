@@ -1,9 +1,9 @@
 // 图标列表
 const iconList = {
-  checkbox_checked: 'https://cnlands.cn/images/icon_box-checked.png',
-  checkbox_unchecked: 'https://cnlands.cn/images/icon_box-empty.png',
-  icon_completed_right: 'https://cnlands.cn/images/icon_right.png',
-  icon_completed_wrong: 'https://cnlands.cn/images/icon_error.png'
+  checkbox_checked: 'https://www.cnlands.cn/images/icon_box-checked.png',
+  checkbox_unchecked: 'https://www.cnlands.cn/images/icon_box-empty.png',
+  icon_completed_right: 'https://www.cnlands.cn/images/icon_right.png',
+  icon_completed_wrong: 'https://www.cnlands.cn/images/icon_error.png'
 };
 
 // 接口列表
