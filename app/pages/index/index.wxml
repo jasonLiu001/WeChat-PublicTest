@@ -18,13 +18,15 @@
 
 
     <!-- status图标 -->
-    <view style="position:absolute;left: 100px;top:30px;opacity:0.5;height: 50px;width: 100px;">
-      <text style="color: #f76160">已完成</text>
+    <view style="position:absolute;left: 100px;top:30px;opacity:0.5;height: 30px;width: 100px;">
+      <text style="color: #f76160" wx:if="{{row.status===1}}">已完成</text>
+      <text style="color: #27f730" wx:else>进行中</text>
     </view>
 
     <!--isWin图标-->
-    <view style="position:absolute;left: 150px;top:10px;opacity:0.5;height: 50px;width: 100px;">
-      <image src='{{icons.icon_completed_right}}' style="display: inline"></image>
+    <view style="position:absolute;left: 150px;top:10px;opacity:0.5;height: 50px;width: 80px;">
+      <image src='{{icons.icon_completed_right}}' style="display: inline" wx:if="{{row.isWin===1}}"></image>
+      <image src='{{icons.icon_completed_wrong}}' style="display: inline" wx:else></image>
     </view>
 
   </view>
