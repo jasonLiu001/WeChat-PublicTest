@@ -25,8 +25,8 @@
 
     <!--isWin图标-->
     <view style="position:absolute;left: 150px;top:10px;opacity:0.5;height: 50px;width: 80px;">
-      <image src='{{icons.icon_completed_right}}' style="display: inline" wx:if="{{row.isWin===1}}"></image>
-      <image src='{{icons.icon_completed_wrong}}' style="display: inline" wx:else></image>
+      <image src='{{icons.icon_completed_right}}' style="display: inline" wx:if="{{row.isWin===1&&row.status===1}}"></image>
+      <image src='{{icons.icon_completed_wrong}}' style="display: inline" wx:elif="{{row.isWin===0&&row.status===1}}"></image>
     </view>
 
   </view>
