@@ -1,0 +1,9 @@
+<!--pages/share/index.wxml-->
+<view class='main'>
+  <view>
+    <button bindtap='openDetailPage'>navigateTo打开详情页</button>
+  </view>
+  <view>
+    <button bindtap='openDetailPageRedirect'>redirectTo打开详情页</button>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/share/detail.wxml-->
+<view class='main'>
+  <button bindtap='openHomePage'>navigateTo打开首页</button>
+  <button bindtap='openHomePageRedirect'>redirectTo打开首页</button>
+</view>

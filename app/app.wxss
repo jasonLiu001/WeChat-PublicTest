@@ -13,9 +13,7 @@ page {
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding-left: 24px;
-  padding-right: 24px;
 }
